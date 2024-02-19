@@ -1,0 +1,114 @@
+:root {
+  --base-font: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 400 18px/28px var(--base-font);
+  margin: 0;
+}
+
+.l-wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c-header {
+  background: #f5f5f5;
+  padding: 16px 0;
+}
+.c-header .c-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.c-header nav.c-header__nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.c-header nav.c-header__nav > ul a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+  transition: 0.2s;
+}
+.c-header nav.c-header__nav > ul a:hover, .c-header nav.c-header__nav > ul a:focus {
+  color: #000;
+}
+.c-header a.c-header__brand {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 22px;
+}
+
+.c-dropdown-menu-wrapper {
+  position: relative;
+}
+.c-dropdown-menu-wrapper:hover .c-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.c-dropdown-menu-wrapper > a {
+  display: flex;
+  align-items: center;
+}
+.c-dropdown-menu-wrapper > a > svg {
+  width: 16px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.c-dropdown-menu {
+  position: absolute;
+  right: -16px;
+  width: 200px;
+  min-height: 100px;
+  background-color: #fff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  top: auto;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.c-dropdown-menu > li > a {
+  padding: 8px 16px;
+  display: block;
+  text-align: right;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-mt-50 {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=bundle.css.map */
