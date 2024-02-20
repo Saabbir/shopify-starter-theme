@@ -3,4 +3,6 @@ node_modules
 package.json
 package-lock.json
 README.md
-assets/scss/**/*.scss
+assets/bundle.css.map
+Screenshot.png
+*.zip

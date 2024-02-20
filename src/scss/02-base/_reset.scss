@@ -5,6 +5,14 @@
 }
 
 body {
-  font: normal 400 18px/28px var(--base-font);
+  font: normal 400 18px/1.5 var(--base-font);
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
 }
